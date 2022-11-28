@@ -1,0 +1,38 @@
+html {
+  --primary-width: 320px;
+  --adaptive-width: calc(100% - 40px);
+  --card-width: 100%;
+  --aspect-ratio: 280 / 205;
+  --filterBar-gap: 15px;
+  --filterItem-width: 100%;
+  --header-padding: 25px;
+
+  @media screen and (min-width: 768px) {
+    --primary-width: 700px;
+    --adaptive-width: calc(100% - 68px);
+    --card-width: calc(340 * 100 / 700 * 1%);
+    --aspect-ratio: 340 / 249;
+    --filterBar-gap: 20px;
+    --filterItem-width: calc(100% - 540px);
+    --filterItem-column-gap: calc(20 * 100 / 700 * 1%);
+    --header-padding: 35px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    --primary-width: 1024px;
+    --adaptive-width: calc(100% - 84px);
+    --card-width: calc(300 * 100 / 940 * 1%);
+    --aspect-ratio: 300 / 230;
+    --filterItem-width: calc(100% - 720px);
+    --filterItem-column-gap: calc(20 * 100 / 960 * 1%);
+  }
+
+  @media screen and (min-width: 1366px) {
+    --primary-width: 1366px;
+    --adaptive-width: 1120px;
+    --card-width: 360px;
+    --aspect-ratio: 360 / 275;
+    --filterItem-width: 265px;
+    --filterItem-column-gap: 20px;
+  }
+}

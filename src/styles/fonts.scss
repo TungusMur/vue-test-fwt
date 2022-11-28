@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("@/assets/fonts/Roboto-Regular.ttf");
+}
+
+@mixin genericFont {
+  font-family: "Roboto";
+  font-style: normal;
+}
+
+@mixin cardItem-titel {
+  @include genericFont;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+@mixin cardItem-heading {
+  @include genericFont;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+@mixin cardItem-content {
+  @include genericFont;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+@mixin filterItem-titel {
+  @include genericFont;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+@mixin filterItem-content {
+  @include genericFont;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin painting-content {
+  @include genericFont;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
